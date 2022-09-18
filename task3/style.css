@@ -1,0 +1,107 @@
+body{
+    background-color: #EEEEEE;
+    margin-left:190px ;
+    margin-top:50px ;
+}
+
+.mainbox{
+    float: left;
+    width: 300px;
+    height: 440px;
+    background-color: white;
+    margin: 15px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.BoxTitle{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.BasicTitleColor{
+    background-color: #5A99EE;
+}
+.StandardTitleColor{
+    background-color: #FC8165;
+}
+.premuimTitleColor{
+    background-color: #47BCC7;
+}
+.titletext{
+    COLOR: WHITE;
+    font-weight: bold;
+}
+
+.PriceBox{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.PriceBoxcolor{
+background-color: #71A7F0;
+}
+.bPriceBoxcolor{
+    background-color: #FC967E;
+}
+
+.cPriceBoxcolor{
+        background-color: #5BC3CD;
+}
+
+.pricetext{
+    COLOR: WHITE;
+    font-weight: bold;
+    font-size: 30px;
+}
+.Savebox{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Saveboxcolor{
+    background-color: #84B3F2;
+}
+.bSaveboxcolor{
+    background-color: #FDAA97;
+}
+.cSaveboxcolor{
+    background-color: #6AC9D2;
+}
+.textcontent{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.buttomdesgin{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buttom{
+    padding: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+
+}
+.bottom1c{
+    background-color: #20A2B8;
+}
+.bottom2c{
+    background-color: #DC3545;
+}
+.bottom3c{
+    background-color: #17A2B8;
+}
+.disactive{
+    text-decoration: line-through;
+}

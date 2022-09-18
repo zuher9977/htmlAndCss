@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Profile</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'aboutMe':
+                document.getElementById('aboutMe').style.display="block";
+                document.getElementById('Projects').style.display="none";
+                document.getElementById('Settings').style.display="none";
+                break;
+            case 'Projects':
+                document.getElementById('aboutMe').style.display="none";
+                document.getElementById('Projects').style.display="block";
+                document.getElementById('Settings').style.display="none";
+                break;
+            case 'Settings':
+                document.getElementById('aboutMe').style.display="none";
+                document.getElementById('Projects').style.display="none";
+                document.getElementById('Settings').style.display="block";
+                break;
+        }
+    }
+
+    </script>
+</head>
+
+
+
+<body>
+
+    <div class="mainbluebox">
+        <div class="imagedev"> <img src="1.jpg" alt="first pic" style="width:250px;height:250px;border-radius: 50%;margin-left: 500px;margin-top: 45px;border: 5px solid white;"></div>
+    <div class="zuher"><span>ZuHer Abusalah</span></div>
+    </div>
+    <div class="settings">
+        <div class="settingscontener" onclick="Toggle('aboutMe')"><span>About me</span></div>
+        <div class="settingscontener" onclick="Toggle('Projects')"><span>Projects</span></div>
+        <div class="settingscontener" onclick="Toggle('Settings')"><span>Settings</span></div>
+    </div>
+
+
+    <div id="aboutMe">
+    <div class="LeftFirstBox">
+        <div class="TitleRightFirstBox"><span>Personal Information</span></div>
+        <div class="line"></div>
+        <div class="TitleRightFirstBoxcontener"><span>Full Name</span>
+        </div><div class="TitleRightFirstBoxcontener1"><span>ZuHer Eyad Salah Abusalah</span></div>
+        <div class="TitleRightFirstBoxcontener"><span>Mobile</span>
+        </div><div class="TitleRightFirstBoxcontener1"><span>(+962) 78 558 6654</span></div>
+        <div class="TitleRightFirstBoxcontener"><span>Email</span>
+        </div><div class="TitleRightFirstBoxcontener1"><span>zuherabusalah@gmail.com</span></div>
+        <div class="TitleRightFirstBoxcontener"><span>Location</span>
+        </div><div class="TitleRightFirstBoxcontener1"><span>JORDAN</span></div>
+    </div>
+    <div class="RightFirstBox">
+        <div class="TitleRightFirstBox"><span>BIOGRAPHY</span></div>
+        <div class="line"></div>
+        <div class="firstrightboxtext"><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </span></div>
+        <div class="secrightboxtext"><span>but also the leap into electronic typesetting, remaining essentially
+            unchanged.</span></div>
+        <div class="firstrightboxtext"><span>It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></div>
+    </div>
+
+
+    <div class="secRightFirstBox">
+        <div class="TitleRightFirstBox"><span>Languages</span></div>
+        <div class="line"></div>
+        <div class="secRightFirstBoxcontener1"><span>. English</span></div>
+        <div class="secRightFirstBoxcontener1"><span>. French</span></div>
+        <div class="secRightFirstBoxcontener1"><span>. Greek</span></div>
+        </div>  
+
+        
+    <div class="secRightFirstBox1">
+        <div class="TitleRightFirstBox"><span>Skills</span></div>
+        <div class="line"></div>
+        <div class="mainskills">
+            <div class="angularjs"><span>Angular Js</span></div>
+            <div class="angularjsright"><span>60%</span></div>
+            <div class="angularjsbuttom"></div>
+        </div>
+        <div class="mainskills">
+            <div class="angularjs"><span>JavaScript</span></div>
+            <div class="angularjsright"><span>90%</span></div>
+            <div class="angularjsbuttom1"></div>
+        </div>
+        <div class="mainskills">
+            <div class="angularjs"><span>Worldpress</span></div>
+            <div class="angularjsright"><span>80%</span></div>
+            <div class="angularjsbuttom2"></div>
+        </div>
+        <div class="mainskills">
+            <div class="angularjs"><span>HTML5 & CSS3</span></div>
+            <div class="angularjsright"><span>95%</span></div>
+            <div class="angularjsbuttom3"></div>
+        </div>
+    </div>
+    </div>
+    <div id="Projects" style="display: none;">
+       
+        <div class="mainmyprjoect">
+            <div class="myprojecttitle"><span> MY PROJECT</span></div>
+            <div class="line"></div>
+
+            <div>
+                <table>
+                    <thead>
+                    <th>#</th>
+                    <th>Project name</th>
+                    <th>start date</th>
+                    <th>Due date</th>
+                    <th>assgin</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Moltran Admin</td>
+                    <td>1/1/2015</td>
+                    <td>7/5/2015</td>
+                    <td>Coderthemes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Moltran Admin</td>
+                    <td>1/1/2015</td>
+                    <td>7/5/2015</td>
+                    <td>Coderthemes</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Moltran Admin</td>
+                    <td>1/1/2015</td>
+                    <td>7/5/2015</td>
+                    <td>Coderthemes</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+
+    </div>
+</div>
+    <div id="Settings" style="display: none;">
+        <div class="mainmyprjoect1">
+            <div class="myprojecttitle"><span>Edit Profile</span></div>
+            <div class="line1"></div>
+            <div class="rightboxtext">
+                <span class="textdesgin">Name</span>
+                <div><input type="text" class="textpadding"></div>
+            </div>
+            <div class="rightboxtext">
+                <span class="textdesgin">Email</span>
+                <div><input type="text" class="textpadding"></div>
+            </div>
+            <div class="rightboxtext">
+                <span class="textdesgin">User</span>
+                <div><input type="text" class="textpadding"></div>
+            </div>
+            <div class="rightboxtext">
+                <span class="textdesgin">Password</span>
+                <div><input type="text" class="textpadding"></div>
+            </div>
+            <div class="rightboxtext">
+                <span class="textdesgin">re-password</span>
+                <div><input type="text" class="textpadding"></div>
+            </div>
+            <div class="rightboxtext">
+                <span class="textdesgin">About Me.</span>
+                <div><input type="text" class="textpadding1"></div>
+            </div>
+            <div ><input type="submit" value="Save Changes" class="endbutton"></div>
+
+    </div>
+    </div>
+</body>
+
+</html>

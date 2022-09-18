@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>account settings</title>
+        <link href="acc.css" rel="stylesheet" type="text/css" >
+
+        <script type="text/javascript">
+            function Toggle(value){
+                switch(value){
+                    case 'General':
+                    document.getElementById('General').style.display="block";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Password':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display=" block";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+        
+                    break;
+                    case 'Info':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="block";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Notification':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="block";
+                    break;
+                }
+            }
+            </script>
+    </head>
+
+
+    <body>
+        <div class="maintitle">
+            <span>Account Settings</span>
+        </div>
+        <div class="mainbox">
+            <div class="lefMaintDiv">
+                <div class="Lefttextsytle" onclick="Toggle('General')"><span>  General</span></div>
+                <div class="Lefttextsytle" onclick="Toggle('Password')" ><span>  Change Password</span></div>
+                <div class="Lefttextsytle" onclick="Toggle('Info')"><span>  Info</span></div>
+                <div class="Lefttextsytle" onclick="Toggle('Notification')"><span>  Notifications</span></div>
+            </div>
+            
+            <div class="RightMainDiv" id="General">
+                <div class="MainDivPho">
+                    <div class="lefttheimg">
+                        <img src="1.jpg" alt="first pic" style="width:80px;height:80px;border-radius: 5px;">
+                    </div>
+                    <div class="lefttheimg">
+                        <div class="lefttheimgbutt1">
+                            <input type="submit" value="Upload new photo" class="buttomdesgin buttomdesgin1 "/>
+                        </div>
+                        <div class="lefttheimgbutt2">
+                            <input type="reset" value="Reset" class="buttomdesgin buttomdesgin2"/>
+                        </div>
+                        <div class="allowedpho"><span>Allowed JPG,PNG or Gif.Max size is 800K</span></div>
+                    </div>
+                </div>
+
+                <div class="rightboxtext">
+                    <span>Username</span>
+                    <div><input type="text" class="textpadding" placeholder="Username"></div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Name</span>
+                    <div><input type="text" class="textpadding" placeholder="Your Name"></div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Email</span>
+                    <div><input type="text" class="textpadding" placeholder="examble@examble.com"></div>
+                </div>
+                <div class="emaildesc">
+                    <div>
+                        <span class="emailtextdesc">Your Email is not confirmed. Please check your inbox</span>
+                        <div class="resendpadding"><span class="emailtextdesc resendstyle">Resend confirmation</span></div>
+                    </div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Company</span>
+                    <div><input type="text" class="textpadding" placeholder="Dare Academy"></div>
+                </div>
+
+                <div class="rightboxtext">
+                    <div class="endbutton">
+                        <input type="submit" value="Cancel" class="buttomdesgin buttomdesgin3"/>
+                    </div>
+                    <div class="endbutton endbutton1">
+                        <input type="submit" value="Save Changes" class="buttomdesgin buttomdesgin1"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="RightMainDiv" id="Password" style="display: none;">
+                <div class="rightboxtext">
+                    <span>Current Password</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>                <div class="rightboxtext">
+                    <span>New Password</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>               
+                 <div class="rightboxtext">
+                    <span>Repeat New Password</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>
+                <div class="rightboxtext">
+                    <div class="endbutton">
+                        <input type="submit" value="Cancel" class="buttomdesgin buttomdesgin3"/>
+                    </div>
+                    <div class="endbutton endbutton1">
+                        <input type="submit" value="Save Changes" class="buttomdesgin buttomdesgin1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="RightMainDiv" id="Info" style="display: none;">
+                <div class="rightboxtext">
+                    <span>Bio</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Birthday</span>
+                    <div><input type="date" class="brthdate" ></div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Country</span>
+                    <div>
+                        <select name="Choose your Country" id="" class="textpadding CountryDiv">
+                            <option value="">USA</option>
+                            <option value="">JORDAN</option>
+                            <option value="">KSA</option>
+                            <option value="">UAE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contantstylediv"><span class="contantstyle">Contant</span></div>
+                <div class="rightboxtext">
+                    <span>Phone</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>
+                <div class="rightboxtext">
+                    <span>Website</span>
+                    <div><input type="text" class="textpadding"></div>
+                </div>
+                <div class="rightboxtext">
+                    <div class="endbutton">
+                        <input type="submit" value="Cancel" class="buttomdesgin buttomdesgin3"/>
+                    </div>
+                    <div class="endbutton endbutton1">
+                        <input type="submit" value="Save Changes" class="buttomdesgin buttomdesgin1"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="RightMainDiv" id="Notification" style="display:none;">
+                <div class="contantstylediv"><span class="contantstyle">Activite</span></div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>email me when someone answer on my forum thread</span>
+                </div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>email me when someone comment on my article</span>
+                </div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>email me when someone follows me</span>
+                </div>
+                <div class="contantstylediv"><span class="contantstyle">Application</span></div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>News and announcement</span>
+                </div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>Weekly product updates</span>
+                </div>
+                <div class="notidiv">
+                    <input type="checkbox"><span>Weekly blog digest</span>
+                </div>
+                <div class="endbutton endbutton1">
+                    <input type="submit" value="Save Changes" class="buttomdesgin buttomdesgin1"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
